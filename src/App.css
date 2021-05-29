@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 860px) {
+  body {
+    margin: auto;
+    width: 100%;
+    background-color: #323232;
+  }
+  body .App {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    background-color: #323232;
+    color: white;
+    min-width: 860px;
+  }
+  body .App #editordiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 0px solid black;
+    -webkit-box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
+    margin: 0.5%;
+    border-radius: 10px;
+  }
+  body .App textarea {
+    width: 95%;
+    height: 84vh;
+    margin: auto;
+    resize: vertical;
+    font-size: 15px;
+    background-color: #323232;
+    color: white;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+  }
+  body .App #previewdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+    -webkit-box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
+    margin: 0.5%;
+    border-radius: 10px;
+  }
+  body .App #toolbar {
+    display: block;
+    margin: 20px 20px 0px 10px;
+    -webkit-box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 5px black;
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid orangered;
+  }
+  body .App #preview {
+    text-align: start;
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    overflow-wrap: break-word;
+  }
+  body .App #preview blockquote {
+    border-left: 3px solid orange;
+    color: orange;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+  body .App #preview a {
+    color: orangered;
+  }
+  body .App #preview code {
+    background: cyan;
+    padding: 1px 4px 2px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+  }
+  body .App #preview pre {
+    background: cyan;
+    padding: 5px 0 5px 5px;
+  }
+  body .App #preview h1 {
+    border-bottom: 2px solid gray;
+  }
+  body .App #preview h2 {
+    border-bottom: 1px solid gray;
+  }
+  body .App #preview table {
+    border-collapse: collapse;
+  }
+  body .App #preview td,
+  body .App #preview th {
+    border: 2px solid gray;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 860px) {
+  body {
+    margin: auto;
+    width: 100%;
+    background-color: #323232;
   }
-  to {
-    transform: rotate(360deg);
+  body .App {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    background-color: #323232;
+    color: white;
+  }
+  body .App #editordiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 1%;
+    border-radius: 10px;
+  }
+  body .App textarea {
+    width: 98%;
+    height: 50vh;
+    margin: auto;
+    margin-bottom: 10%;
+    resize: vertical;
+    font-size: 15px;
+    background-color: #323232;
+    color: white;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+  }
+  body .App #previewdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+    margin: 1%;
+    border-radius: 10px;
+  }
+  body .App #toolbar {
+    width: 100%;
+    display: block;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 5px black;
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid orangered;
+  }
+  body .App #preview {
+    text-align: start;
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    overflow-wrap: break-word;
+  }
+  body .App #preview blockquote {
+    border-left: 3px solid orange;
+    color: orange;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+  body .App #preview a {
+    color: orangered;
+  }
+  body .App #preview code {
+    background: cyan;
+    padding: 1px 4px 2px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+  }
+  body .App #preview pre {
+    background: cyan;
+    padding: 5px 0 5px 5px;
+  }
+  body .App #preview h1 {
+    border-bottom: 2px solid gray;
+  }
+  body .App #preview h2 {
+    border-bottom: 1px solid gray;
+  }
+  body .App #preview table {
+    border-collapse: collapse;
+  }
+  body .App #preview td,
+  body .App #preview th {
+    border: 2px solid gray;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
+/*# sourceMappingURL=App.css.map */
