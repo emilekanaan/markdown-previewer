@@ -3,6 +3,7 @@ import './App.css';
 import Toolbar from './components/Toolbar';
 import Editor from './components/Editor';
 import Preview from './components/Preview';
+import Footer from './components/Footer.js';
 
 const placeholder = `# Welcome to my React Markdown Previewer!
 
@@ -65,26 +66,29 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <div id='editordiv'>
-          <Toolbar 
-            text='Editor'
-          />
-          <Editor 
-            name='text'
-            value={this.state.text}
-            onChange={(e) => this.handleChange(e)}
-          />
-        </div>
+      <div className='general'>
+        <div className="App">
+          <div id='editordiv'>
+            <Toolbar 
+              text='Editor'
+            />
+            <Editor 
+              name='text'
+              value={this.state.text}
+              onChange={(e) => this.handleChange(e)}
+            />
+          </div>
 
-        <div id='previewdiv'>
-          <Toolbar 
-            text='Previewer'
-          />
-          <Preview 
-            value={this.state.text}
-          />
+          <div id='previewdiv'>
+            <Toolbar 
+              text='Previewer'
+            />
+            <Preview 
+              value={this.state.text}
+            />
+          </div>
         </div>
+        <Footer />
       </div>
     );
   }
